@@ -1,0 +1,89 @@
+/* Styles pour le formulaire de réservation */
+#reservationForm {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style pour les div contenant les champs du formulaire */
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style pour les labels */
+label {
+    display: block;
+    width: 200px;
+    float: left;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Style pour les champs d'entrée (input et select) */
+input,
+select {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 33%;
+    text-align: left;
+}
+
+/* Style pour les champs en lecture seule (readonly) */
+input[readonly] {
+    background-color: #f7f7f7;
+    cursor: not-allowed;
+}
+
+/* Ajouter un style pour les champs "Quantité" et "Sous-total HT" */
+#quantite1,
+#quantite2,
+#quantite3,
+#sousTotal1,
+#sousTotal2,
+#sousTotal3 {
+    width: 29%;
+}
+
+/* Style pour les champs Nom, Prénom, Téléphone, Email, Sous-total HT, et Total TTC */
+#nom,
+#prenom,
+#telephone,
+#email,
+#totalHT,
+#totalTTC {
+    width: 30%;
+}
+
+/* Style pour le div des boutons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    /* Centre les boutons horizontalement */
+}
+
+/* Style pour les boutons */
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: #fff;
+    margin: 2px;
+    /* Réduisez cette marge pour rapprocher davantage les boutons */
+    cursor: pointer;
+}
+
+/* Style pour centrer les boutons horizontalement */
+#verifier,
+#imprimer,
+#reinitialiser,
+#envoyer {
+    margin: 0 auto;
+    display: inline-block;
+}
